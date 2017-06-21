@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="30dp"
+    android:layout_width="300dp"
+    android:layout_height="50dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_camera"
+        android:background="#83000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:background="@null"
+        android:id="@+id/fragment_flash"
+        android:scaleType="fitStart"
+        android:src="@drawable/fragment_camera_flash_off"
+        android:layout_alignTop="@+id/fragment_grid"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:id="@+id/fragment_timer"
+        android:scaleType="fitStart"
+        android:src="@drawable/fragment_camera_timer"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:background="@null"
+        android:id="@+id/fragment_grid"
+        android:onClick="grid_click"
+        android:scaleType="fitStart"
+        android:src="@drawable/fragment_camera_grid"
+        android:layout_alignTop="@+id/fragment_timer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="41dp" />
+</RelativeLayout>

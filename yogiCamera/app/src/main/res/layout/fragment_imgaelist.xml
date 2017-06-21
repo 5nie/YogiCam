@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginBottom="100dp"
+    android:layout_marginTop="200dp"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/cancel_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:onClick="cancel_click"
+        android:scaleType="fitStart"
+        android:src="@drawable/fragment_image_list_cancel" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#ade8dbdb"
+        android:scrollbarThumbHorizontal="@drawable/scrollbar_background_button"
+        android:scrollbarTrackHorizontal="@drawable/scroolbar_background_back">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageListTesting_one"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:src="@drawable/test_image_one" />
+
+            <ImageView
+                android:id="@+id/imageListTesting_two"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:src="@drawable/test_image_two" />
+
+            <ImageView
+                android:id="@+id/imageListTesting_three"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:src="@drawable/test_image_two" />
+
+            <ImageView
+                android:id="@+id/imageListTesting_four"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:src="@drawable/test_image_two" />
+
+            <ImageView
+                android:id="@+id/imageListTesting_five"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:src="@drawable/test_image_two" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
